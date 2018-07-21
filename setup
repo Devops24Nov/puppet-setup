@@ -1,0 +1,7 @@
+
+
+
+wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && sudo rpm -Uvh epel-release-6*.rpm 
+sudo yum -y install foreman-installer && sudo foreman-installer
+
+http://www.tothenew.com/blog/setting-up-mcollective-and-puppet-push-from-puppetmaster/
