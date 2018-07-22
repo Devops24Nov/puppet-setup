@@ -16,4 +16,19 @@ middleware server and mco-client
    
    client.cfg:
    
+      plugin.activemq.pool.1.host = middleware.example.com
+      plugin.activemq.pool.1.port = 61613
+      plugin.activemq.pool.1.user = system
+      plugin.activemq.pool.1.password = manager
+
+
+  mco-server;
+  
+    yum install mcollective mcollective-common mcollective-puppet-agent
+
+    server.cfg
+    
+     
+
+   
      
