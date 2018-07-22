@@ -1,0 +1,19 @@
+
+
+
+middleware server and mco-client
+
+
+  gem install stomp
+  yum install mcollective-client mcollective-common activemq mcollective-puppet-client -y
+
+
+   cat /etc/ActiveMQ/credential.properties <<
+   user: system
+   password; manager
+   
+   service activemq restart
+   
+   client.cfg:
+   
+     
