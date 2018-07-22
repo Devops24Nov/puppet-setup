@@ -27,6 +27,21 @@ middleware server and mco-client
     yum install mcollective mcollective-common mcollective-puppet-agent
 
     server.cfg
+    connector = activemq
+plugin.activemq.pool.size = 1
+plugin.activemq.pool.1.host = middleware.example.com
+plugin.activemq.pool.1.port = 61613
+plugin.activemq.pool.1.user = mcollective
+plugin.activemq.pool.1.password = marionette
+
+plugin.puppet.command = puppet agent
+plugin.puppet.splay = true
+plugin.puppet.splaylimit = 30
+plugin.puppet.config = /etc/puppet/puppet.conf
+plugin.puppet.signal_daemon = true
+
+
+service mcollective restart
     
      
 
