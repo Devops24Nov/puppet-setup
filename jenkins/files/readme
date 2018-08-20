@@ -1,0 +1,19 @@
+http://softwaretester.info/install-jenkins-with-puppet/
+
+
+# simple Dry-run with noop
+$ puppet apply testenvironment/manifests/site.pp --modulepath=/root/testenvironment/modules/ $* --noop
+
+# Dry-run with noop and summarize
+$ puppet apply testenvironment/manifests/site.pp --modulepath=/root/testenvironment/modules/ $* --noop --summarize
+
+# Dry-run with noop, summarize and debug
+$ puppet apply testenvironment/manifests/site.pp --modulepath=/root/testenvironment/modules/ $* --noop --summarize --debug
+
+# example project-wide
+$ puppet-lint testenvironment/
+
+# example specific files
+$ puppet-lint testenvironment/manifests/site.pp
+$ puppet-lint testenvironment/manifests/nodes.pp
+$ puppet-lint testenvironment/modules/jenkins/manifests/init.pp
