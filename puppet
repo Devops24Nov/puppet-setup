@@ -21,11 +21,14 @@ https://www.digitalocean.com/community/tutorials/how-to-install-puppet-4-on-ubun
   sudo systemctl status puppetserver
   
   agent:
-   wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
-sudo dpkg -i puppetlabs-release-pc1-xenial.deb
-sudo apt-get update -y
+export LC_ALL="en_US.UTF-8" && \
+export LC_CTYPE="en_US.UTF-8" && \
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb && \
+sudo dpkg -i puppetlabs-release-pc1-xenial.deb && \
+sudo apt-get update -y && \
 sudo apt-get install puppet-agent -y
   
+ sudo /opt/puppetlabs/bin/puppet agent --test
  
 ########################
 puppetmaster4:
