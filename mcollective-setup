@@ -1,9 +1,11 @@
 
 
+http://yum.puppetlabs.com/el/6/products/x86_64/
 
 middleware server and mco-client
 
-
+rpm -Uvh http://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release-6-10.noarch.rpm
+yum install rubygem
   gem install stomp
   yum install mcollective-client mcollective-common activemq mcollective-puppet-client -y
 
