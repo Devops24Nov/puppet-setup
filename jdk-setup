@@ -1,0 +1,4 @@
+
+puppet module install spantree-java8 --version 0.6.1
+
+include java8
