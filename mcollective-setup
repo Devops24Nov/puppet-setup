@@ -9,8 +9,8 @@ middleware server and mco-client
 
 
    cat /etc/ActiveMQ/credential.properties <<
-   user: system
-   password; manager
+   activemq.username=system
+   activemq.password=manager
    
    service activemq restart
    
