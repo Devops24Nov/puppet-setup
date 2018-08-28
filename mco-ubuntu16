@@ -1,0 +1,14 @@
+
+https://www.virtual-server.org/blog/how-to-install-activemq-on-ubuntu-16-04/
+
+middleware:
+wget http://www.trieuvan.com/apache/activemq/5.15.5/apache-activemq-5.15.5-bin.tar.gz
+tar -xf apache-activemq-5.15.5-bin.tar.gz
+
+sudo apt-get install mcollective
+
+
+client:
+
+ sudo apt-get update
+sudo apt-get install mcollective-client
