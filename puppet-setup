@@ -1,0 +1,22 @@
+puppet-setup
+
+
+
+ puppet master
+ 
+ 
+ 
+ puppet agent
+ 
+ 
+ 
+ certificates
+ 
+ 
+ 
+  modules 
+  
+  
+  
+  module declaration with site.pp
+  
