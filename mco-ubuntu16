@@ -5,6 +5,10 @@ middleware:
 wget http://www.trieuvan.com/apache/activemq/5.15.5/apache-activemq-5.15.5-bin.tar.gz
 tar -xf apache-activemq-5.15.5-bin.tar.gz
 
+ln -s  apache-activemq-5.15.5 activemq
+activemq/bin/activemq start
+netstat -tulnp | grep java
+
 sudo apt-get install mcollective
 
 
