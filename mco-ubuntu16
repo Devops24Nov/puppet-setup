@@ -22,7 +22,14 @@ client:
 
  sudo apt-get update
 sudo apt-get install mcollective-client
-modify the client.cfg
+
+modify the client.cfg:
+connector = activemq
+plugin.activemq.pool.size = 1
+plugin.activemq.pool.1.host = middleware.example.com
+plugin.activemq.pool.1.port = 61613
+plugin.activemq.pool.1.user = system
+plugin.activemq.pool.1.password = manager
 
 
 
