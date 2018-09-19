@@ -2,6 +2,12 @@
 https://www.virtual-server.org/blog/how-to-install-activemq-on-ubuntu-16-04/
 
 middleware:
+  java:
+ sudo apt-get install software-properties-common && \
+         sudo add-apt-repository ppa:webupd8team/java -y && \
+         sudo apt-get update && \
+         sudo apt-get install oracle-java8-installer -y
+         
 wget http://www.trieuvan.com/apache/activemq/5.15.5/apache-activemq-5.15.5-bin.tar.gz
 tar -xf apache-activemq-5.15.5-bin.tar.gz
 
@@ -16,3 +22,4 @@ client:
 
  sudo apt-get update
 sudo apt-get install mcollective-client
+modify the client.cfg
