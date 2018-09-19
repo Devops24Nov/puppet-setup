@@ -23,3 +23,29 @@ client:
  sudo apt-get update
 sudo apt-get install mcollective-client
 modify the client.cfg
+
+
+
+server;
+
+ mco-server;
+  
+    apt-get install mcollective* mcollective-common -y
+
+    server.cfg
+    connector = activemq
+plugin.activemq.pool.size = 1
+plugin.activemq.pool.1.host = middleware.example.com
+plugin.activemq.pool.1.port = 61613
+plugin.activemq.pool.1.user = mcollective
+plugin.activemq.pool.1.password = marionette
+
+plugin.puppet.command = puppet agent
+plugin.puppet.splay = true
+plugin.puppet.splaylimit = 30
+plugin.puppet.config = /etc/puppet/puppet.conf
+plugin.puppet.signal_daemon = true
+
+
+service mcollective restart
+
