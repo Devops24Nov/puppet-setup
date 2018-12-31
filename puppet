@@ -58,3 +58,11 @@ sudo sh -c 'echo "deb http://deb.theforeman.org/ plugins 1.5" >> /etc/apt/source
 wget -q http://deb.theforeman.org/pubkey.gpg -O- | sudo apt-key add - && \
 sudo apt-get update && sudo apt-get install foreman-installer && \
 sudo foreman-installer
+
+
+
+
+monolithic puppet enterprise instllation:
+
+ https://puppet.com/docs/pe/2018.1/installing_pe.html
+
