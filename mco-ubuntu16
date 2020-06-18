@@ -17,13 +17,17 @@ ln -s  apache-activemq-5.15.5 activemq
 activemq/bin/activemq start
 netstat -tulnp | grep java
 
-sudo apt-get install mcollective
-
 
 client:
-
- sudo apt-get update
+sudo apt-get update
 sudo apt-get install mcollective-client
+sudo apt-get install mcollective
+sudo apt-get install mcollective-plugins-puppetd
+
+
+
+
+
 
 modify the client.cfg:
 connector = activemq
